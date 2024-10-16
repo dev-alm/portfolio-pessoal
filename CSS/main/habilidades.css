@@ -1,0 +1,43 @@
+.habilidades {
+  display: grid;
+  align-content: center;
+  padding: 40px;
+}
+
+.habilidades-lista:nth-child(odd) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  left: 15px;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+  font-size: 1.5rem;
+  font-family: orbitron, Arial, Helvetica, sans-serif;
+}
+
+.habilidades-lista:nth-child(even) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px 20px;
+  padding: 20px;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  font-size: 1.5rem;
+  font-family: orbitron, Arial, Helvetica, sans-serif;
+}
+
+.habilidades-lista:nth-child(odd) {
+  background: var(--fundo-2);
+  border: solid 1px var(--fundo-2);
+  border-radius: 0 40px 40px 40px;
+}
+
+.habilidades-lista:hover {
+  border-color: var(--cor-primaria);
+}
+
+.habilidades-lista p {
+  grid-column: 2;
+}

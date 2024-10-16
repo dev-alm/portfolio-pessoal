@@ -1,0 +1,33 @@
+:root {
+  --cor-primaria: rgb(0, 255, 255);
+  --cor-primaria-escura: rgb(0, 92, 95);
+  --fundo-1: #f7f7f7;
+  --fundo-2: #a557ff1f;
+  --texto: #ffffff;
+  --cor-subtitulo: rgba(0, 0, 0, 0.2);
+  --icone: #ffffff;
+  --degrade: radial-gradient(
+    circle,
+    rgba(41, 0, 107, 0.815),
+    rgba(15, 0, 58, 0.973)
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: rgb(0, 255, 255);
+    --cor-primaria-escura: rgb(0, 92, 95);
+    --fundo-1: #111111;
+    --fundo-2: rgba(0, 225, 255, 0.089);
+    --texto: #ffffff;
+    --cor-subtitulo: rgba(255, 255, 255, 0.2);
+    --icone: #ffffff;
+    --degrade: url("../../imagens/wpp/azul-degrade-a.jpg");
+  }
+  .wpp {
+    background-image: var(--degrade);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

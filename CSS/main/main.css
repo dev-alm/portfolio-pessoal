@@ -1,0 +1,126 @@
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.introducao {
+  height: 400px;
+  padding: 10px;
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao img {
+  display: grid;
+  position: relative;
+  clip-path: circle(37% at 50% 50%);
+  height: 110%;
+  width: 100%;
+  top: -12px;
+}
+
+.introducao-texto {
+  display: grid;
+  border: solid 2px rgba(0, 225, 255, 0.089);
+  border-radius: 40px 40px 40px 0;
+  background: var(--fundo-2);
+  align-content: center;
+  padding: 0 45px;
+}
+
+.introducao-texto p {
+  text-align: center;
+  text-indent: 2rem;
+  line-height: 30px;
+  font-family: orbitron, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+span {
+  color: var(--cor-primaria);
+}
+
+.projetos {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  background: var(--fundo-2);
+  border: solid 2px rgba(0, 225, 255, 0.089);
+  border-radius: 40px 0 40px 40px;
+  padding: 40px;
+  align-content: center;
+  font-family: orbitron, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  gap: 50px;
+  font-weight: 500;
+}
+
+.projetos li:first-child {
+  position: relative;
+  left: -6px;
+}
+
+.projetos-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.projetos-item a:hover {
+  transform: scale(1.2);
+}
+
+a .icone-androide {
+  width: 50px;
+  height: 50px;
+}
+
+.svg-dark {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before {
+    display: none;
+  }
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

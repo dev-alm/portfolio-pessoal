@@ -1,0 +1,61 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+}
+
+.contato-conteudo {
+  display: inline-block;
+  width: 1000px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: 50vh;
+  background: var(--fundo-2);
+  border: 3px solid var(--fundo-2);
+  border-radius: 6px;
+  margin: 0 auto;
+  align-content: center;
+  justify-items: end;
+}
+
+.redes-sociais-itens a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 40px;
+  height: 50vh;
+  place-content: center;
+  font-family: orbitron, Arial, Helvetica, sans-serif;
+}
+.redes-sociais-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+li a svg path {
+  fill: var(--icone);
+}
+
+.redes-sociais-itens span {
+  color: var(--icone);
+}
+
+li a:hover svg path{
+  fill: var(--cor-primaria) !important;
+}
+
+li a:hover span {
+  color: var(--cor-primaria);
+}
+
+.wpp {
+  background-image: var(--degrade);
+}
