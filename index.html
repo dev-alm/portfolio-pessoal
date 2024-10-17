@@ -7,6 +7,7 @@
     <link rel="icon" href="./imagens/icones/goku.svg">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preload" href="./style.css" as="style">
 </head>
 
 <body class="wpp">
@@ -48,7 +49,6 @@
 
         <nav aria-label="primária">
             <ul class="menu">
-                <!-- <li><a href="index.html">Sobre</a></li> -->
                 <li><a href="./contato/contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -57,54 +57,56 @@
     <main>
         <article class="conteudo" aria-labelledby="label-introducao">
             <div class="introducao">
-                <img src="./imagens/423007284_7450535558324687_3080286359296279271_n.jpg" alt="">
+                <img class="fadeInDown" data-anime="200" src="./imagens/423007284_7450535558324687_3080286359296279271_n.jpg" alt="">
             </div>
 
-            <div class="introducao-texto">
+            <div class="introducao-texto fadeInDown" data-anime="400">
                 <p>Olá, sou <span>Gustavo Almeida</span>, desenvolvedor web de <span>27 anos</span>, <span>apaixonado</span> por criar soluções eficientes e visuais atraentes. <span>Sempre em busca</span> de novos desafios, estou <span>comprometido</span> em aperfeiçoar minhas habilidades e entregar <span>projetos de qualidade</span>.</p>
             </div>
         </article>
 
-        <article class="conteudo conteudo-vantagem" aria-labelledby="label-habilidades">
-            <ul class="habilidades">
-                <li class="habilidades-lista">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="70px">
-                        <path d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z" fill="var(--cor-primaria)" />
-                    </svg>
-                    <h3>HTML5</h3>
-                </li>
-                <li class="habilidades-lista">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="70px">
-                        <path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z" fill="var(--cor-primaria)" />
-                    </svg>
-                    <h3>JAVASCRIPT</h3>
-                </li>
-                <li class="habilidades-lista">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="80px" fill-rule="evenodd">
-                        <path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z" fill="var(--cor-primaria)" />
-                    </svg>
-                    <h3>CSS</h3>
-                </li>
-            </ul>
-            <ul class="projetos">
-                <li class="projetos-item">
-                    <a href="https://dev-alm.github.io/bikcraft-theme-light-dark/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 01</span></a>
-                </li>
+        <article class=" conteudo conteudo-vantagem aria-labelledby="label-habilidades">
+                <ul class="habilidades fadeInDown" data-anime="800">
+                    <li class="habilidades-lista">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="70px">
+                            <path d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z" fill="var(--cor-primaria)" />
+                        </svg>
+                        <h3>HTML5</h3>
+                    </li>
+                    <li class="habilidades-lista">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="70px">
+                            <path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z" fill="var(--cor-primaria)" />
+                        </svg>
+                        <h3>JAVASCRIPT</h3>
+                    </li>
+                    <li class="habilidades-lista">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="80px" height="80px" fill-rule="evenodd">
+                            <path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z" fill="var(--cor-primaria)" />
+                        </svg>
+                        <h3>CSS</h3>
+                    </li>
+                </ul>
+                <ul class="projetos fadeInDown" data-anime="600">
+                    <li class="projetos-item">
+                        <a href="https://dev-alm.github.io/bikcraft-theme-light-dark/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 01</span></a>
+                    </li>
 
-                <li class="projetos-item">
-                    <a href="https://dev-alm.github.io/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 02</span></a>
-                </li>
+                    <li class="projetos-item">
+                        <a href="https://dev-alm.github.io/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 02</span></a>
+                    </li>
 
-                <li class="projetos-item">
-                    <a href="https://dev-alm.github.io/Bikcraft/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 03</span></a>
-                </li>
-            </ul>
+                    <li class="projetos-item">
+                        <a href="https://dev-alm.github.io/Bikcraft/" target="_blank"><img class="icone-androide" src="./imagens/icones/android.png" alt=""><span>PROJETO 03</span></a>
+                    </li>
+                </ul>
         </article>
     </main>
 
     <footer class="rodape">
         <p>Cada <span>desafio</span> é uma <span>oportunidade</span> disfarçada; <span>persista</span> e transforme dificuldades em <span>conquistas</span>.</p>
     </footer>
+    <script src="./plugins/simple-anime.js"></script>
+    <script src="./plugins/script.js"></script>
 </body>
 
 </html>

@@ -22,11 +22,14 @@
     --texto: #ffffff;
     --cor-subtitulo: rgba(255, 255, 255, 0.2);
     --icone: #ffffff;
-    --degrade: url("../../imagens/wpp/azul-degrade-a.jpg");
+    --degrade: radial-gradient(
+    circle,
+    rgba(0, 42, 54, 0.815),
+    rgba(0, 16, 46, 0.973)
+  );
   }
   .wpp {
     background-image: var(--degrade);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }

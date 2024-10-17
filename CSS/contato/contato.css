@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1000px;
+  margin-bottom: 120px;
 }
 
 .contato-conteudo {
@@ -40,6 +41,10 @@
   justify-content: center;
 }
 
+.redes-sociais-itens a:hover {
+  transform: scale(1.2);
+}
+
 li a svg path {
   fill: var(--icone);
 }
@@ -48,7 +53,7 @@ li a svg path {
   color: var(--icone);
 }
 
-li a:hover svg path{
+li a:hover svg path {
   fill: var(--cor-primaria) !important;
 }
 
@@ -58,4 +63,24 @@ li a:hover span {
 
 .wpp {
   background-image: var(--degrade);
+}
+
+@media (max-width: 1000px) {
+  .contato,
+  .contato-conteudo,
+  .redes-sociais,
+  .redes-sociais-itens {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    gap: 40px;
+  }
+  .contato,
+  .contato-conteudo {
+    height: 900px;
+  }
+  .redes-sociais-itens a svg {
+    width: 100px;
+    height: 100px;
+  }
 }
