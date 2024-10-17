@@ -41,6 +41,10 @@
   justify-content: center;
 }
 
+.redes-sociais-itens a {
+  transition: 0.3s ease;
+}
+
 .redes-sociais-itens a:hover {
   transform: scale(1.2);
 }
